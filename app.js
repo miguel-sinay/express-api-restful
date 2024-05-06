@@ -28,7 +28,7 @@ routerProgramacion.get('/:lenguaje', (req, res) => {
     const lenguaje = req.params.lenguaje
     const resultados = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje)
     if (resultados.length === 0) return res.status(404).send(`No se encontraron cursos de ${lenguaje}`)
-    if (req.query.ordenar === 'vistas') return res.send(JSON.stringify((a, b) => b.vistas - a.vistas))
+    if (req.query.ordenar === 'vistas') return res.send(JSON.stringify(resultados.sort((a, b) => b.vistas - a.vistas)))
     res.send(JSON.stringify(resultados))
 })
 routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
