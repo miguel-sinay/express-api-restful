@@ -1,0 +1,29 @@
+{
+  "name": "express-api-restful",
+  "version": "1.0.0",
+  "description": "My first web service created using Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguel-sinay/express-api-restful.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "rest",
+    "restful"
+  ],
+  "author": "Miguel Sinay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguel-sinay/express-api-restful/issues"
+  },
+  "homepage": "https://github.com/miguel-sinay/express-api-restful#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
